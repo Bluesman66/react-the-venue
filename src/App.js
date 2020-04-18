@@ -1,16 +1,14 @@
 import './resources/styles.css';
 
-import React, { Component } from 'react';
-
 import Header from './components/header-footer/header';
+import React from 'react';
 
-class App extends Component {
-	render() {
-		return (
-			<div>
-				<Header />
-			</div>
-		);
-	}
-}
+const App = () => {
+	return (
+		<div style={{ height: '1500px', background: 'cornflowerblue' }}>
+			<Header />
+		</div>
+	);
+};
+
 export default App;
