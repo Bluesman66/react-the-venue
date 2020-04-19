@@ -5,19 +5,25 @@ import React from 'react';
 import SideDrawer from './side-drawer';
 
 const Header = (props) => {
-	const [state, setState] = React.useState({
-		drawerOpen: false,
-	});
+	const [drawerOpen, setDrawerOpen] = React.useState(false);
+	const [headerShow, setHeaderShow] = React.useState(false);
 
-	const toggleDrawer = (value) => {
-		setState({ ...state, drawerOpen: value });
+	const handleScroll = () => {
+		setHeaderShow(window.scrollY > 0);
 	};
+
+	React.useEffect(() => {
+		window.addEventListener('scroll', handleScroll);
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	});
 
 	return (
 		<AppBar
 			position="fixed"
 			style={{
-				backgroundColor: '#2f2f2f',
+				backgroundColor: headerShow ? '#2f2f2f' : 'transparent',
 				boxShadow: 'none',
 				padding: '10px 0px',
 			}}
@@ -28,11 +34,11 @@ const Header = (props) => {
 					<div className="header_logo_title">Musical Events</div>
 				</div>
 
-				<IconButton color="inherit" onClick={() => toggleDrawer(true)}>
+				<IconButton color="inherit" onClick={() => setDrawerOpen(true)}>
 					<MenuIcon />
 				</IconButton>
 
-				<SideDrawer open={state.drawerOpen} onClose={(value) => toggleDrawer(value)} />
+				<SideDrawer open={drawerOpen} onClose={(value) => setDrawerOpen(value)} />
 			</Toolbar>
 		</AppBar>
 	);
