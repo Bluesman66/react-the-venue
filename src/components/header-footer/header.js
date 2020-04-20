@@ -4,7 +4,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import React from 'react';
 import SideDrawer from './side-drawer';
 
-const Header = (props) => {
+const Header = () => {
 	const [drawerOpen, setDrawerOpen] = React.useState(false);
 	const [headerShow, setHeaderShow] = React.useState(false);
 
