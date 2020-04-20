@@ -1,4 +1,5 @@
 import Carrousel from './carrousel';
 import Featured from './featured';
+import TimeUntil from './time-until';
 
-export { Featured, Carrousel };
+export { Featured, Carrousel, TimeUntil };
