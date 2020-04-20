@@ -2,7 +2,7 @@ import React from 'react';
 import Slide from 'react-reveal/Slide';
 
 const TimeUntil = () => {
-	const [deadLine, setDeadLine] = React.useState('Dec, 19, 2020');
+	const [deadLine] = React.useState('Dec, 19, 2020');
 	const [days, setDays] = React.useState('0');
 	const [hours, setHours] = React.useState('0');
 	const [minutes, setMinutes] = React.useState('0');
