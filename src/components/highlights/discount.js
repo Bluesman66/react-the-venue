@@ -1,5 +1,5 @@
 import Fade from 'react-reveal/Fade';
-import MyButton from '../utils/my-button';
+import { MyButton } from '../utils';
 import React from 'react';
 import Slide from 'react-reveal/Slide';
 
