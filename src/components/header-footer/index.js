@@ -1,4 +1,4 @@
-import Header from './header';
-import SideDrawer from './side-drawer';
+import Header from './Header';
+import SideDrawer from './SideDrawer';
 
 export { Header, SideDrawer };

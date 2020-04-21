@@ -1,6 +1,6 @@
-import Carrousel from './carrousel';
+import Carrousel from './Carrousel';
 import React from 'react';
-import TimeUntil from './time-until';
+import TimeUntil from './TimeUntil';
 
 const Featured = () => {
 	return (

@@ -2,7 +2,7 @@ import { AppBar, IconButton, Toolbar } from '@material-ui/core';
 
 import MenuIcon from '@material-ui/icons/Menu';
 import React from 'react';
-import SideDrawer from './side-drawer';
+import SideDrawer from './SideDrawer';
 
 const Header = () => {
 	const [drawerOpen, setDrawerOpen] = React.useState(false);

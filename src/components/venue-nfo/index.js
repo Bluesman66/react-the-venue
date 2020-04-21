@@ -1,3 +1,3 @@
-import VenueNfo from './venue-nfo';
+import VenueNfo from './VenueNfo';
 
 export { VenueNfo };

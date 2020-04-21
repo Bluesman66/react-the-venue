@@ -1,5 +1,5 @@
-import Description from './description';
-import Discount from './discount';
-import Highlights from './highlights';
+import Description from './Description';
+import Discount from './Discount';
+import Highlights from './Highlights';
 
 export { Highlights, Description, Discount };
