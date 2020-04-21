@@ -1,4 +1,5 @@
 import Fade from 'react-reveal/Fade';
+import MyButton from '../utils/my-button';
 import React from 'react';
 import Slide from 'react-reveal/Slide';
 
@@ -38,7 +39,7 @@ const Discount = () => {
 							rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
 							explicabo.
 						</p>
-						<div>Button</div>
+						<MyButton text="Purchase tickets" bck="#ffa800" color="#ffffff" link="http://google.com" />
 					</div>
 				</Slide>
 			</div>
